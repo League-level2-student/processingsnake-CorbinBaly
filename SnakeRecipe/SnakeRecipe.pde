@@ -6,32 +6,48 @@
 class Segment {
 
   //2. Create x and y member variables to hold the location of each segment.
-
+int x;
+int y;
   // 3. Add a constructor with parameters to initialize each variable.
-
+public Segment(int x,int y){
+   
+ }
 
   // 4. Add getter and setter methods for both the x and y member variables.
+  public int getX(){
+    return x;
+  }
+  public int getY(){
+    return y;
+  }
+  public void setX(){
+    this.x = x;
+}
+ public void setY(){
+    this.y = y;
+}
 }
 
 
 // 5. Create (but do not initialize) a Segment variable to hold the head of the Snake
-
+new Segment(5,5);
 
 
 // 6. Create and initialize a String to hold the direction of your snake e.g. "up"
-
+String direction = "Up";
 
 
 // 7. Create and initialize a variable to hold how many pieces of food the snake has eaten.
 // give it a value of 1 to start.
-
+int foodeaten = 1;
 
 
 // 8. Create and initialize foodX and foodY variables to hold the location of the food.
 
 // (Hint: use the random method to set both the x and y to random locations within the screen size (500 by 500).)
 
-//int foodX = ((int)random(50)*10);
+int foodX = ((int)random(50)*10);
+int foodY = ((int)random(50)*10);
 
 
 
